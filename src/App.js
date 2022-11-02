@@ -5,10 +5,21 @@ import Spamalot from './components/Spamalot';
 import NavBar from './components/NavBar';
 import Checkout from './components/Checkout';
 import Menu from './components/Menu';
+import Spam from './components/Spam';
 
 // Spot Check 1
 export class Sum extends Component {
   // your code here...
+  render() {
+    let num1 = 1
+    let num2 = 2
+
+    return (
+      <div>
+        {num1 + num2}
+      </div>
+    )
+  }
 }
 
 // Spot Check 2
@@ -25,6 +36,11 @@ class Nav extends Component {
 
 class LandingPage extends Component {
   // your code here...
+  render() {
+    return (
+      <h1>Welcome!</h1>
+    )
+  }
 }
 
 // Spot Check 3
@@ -76,7 +92,7 @@ export class App extends Component {
           <h4 className="ex-title">Spotcheck 2</h4>
           <div className="exercise" id="spotcheck-2">
             <Nav />
-            {/* your code here... */}
+            <LandingPage />
           </div>
         </div>
 
@@ -104,21 +120,24 @@ export class App extends Component {
         <div className="ex-space">
           <h4 className="ex-title">Exercise 1</h4>
           <div className="exercise" id="ex-1">
-            {/* your code here... */}
+            <Dummy />
           </div>
         </div>
 
         <div className="ex-space">
           <h4 className="ex-title">Exercise 2</h4>
           <div className="exercise" id="ex-2">
-            {/* your code here... */}
+            {/* {Spam()} */}
+            <Spamalot />
           </div>
         </div>
 
         <div className="ex-space">
           <h4 className="ex-title">Exercise 4</h4>
           <div className="exercise" id="ex-4">
-            {/* your code here... */}
+            <NavBar />
+            <Menu />
+            <Checkout />
           </div>
         </div>
       </div>
